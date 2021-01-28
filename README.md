@@ -1,7 +1,7 @@
 # hacking_metamap
 This is a "hacking project" -- what that means is that the code is dirty (at least to start with) with the object to explore something.
 
-The something in this case is to explore the use of meta_map tool by NIH "https://metamap.nlm.nih.gov/".
+The something in this case is to explore the use of meta_map tool by NIH: https://metamap.nlm.nih.gov/.
 
 Metamap is a sophisticated tool that takes some body of text and annotates the text using UMLS Metathesaurus terms.
 
@@ -21,3 +21,12 @@ def meta_map(text):
     # capture the return
     # you should return the output as a python dicrionary
  ```
+
+It seems NIH has a lightweight python client to invoke their webservice here https://metamap.nlm.nih.gov/MetaMapLiteReST.shtml 
+
+So the outline of the task is:
+
+1. Look at https://metamap.nlm.nih.gov/MetaMapLiteReST.shtml
+2. Register for an accoutn with NIH that allows you to invoke their web service
+3. Write the meta_map function as speced above to make the call on https://metamap.nlm.nih.gov/MetaMapLiteReST.shtml
+4. Present your results and explain the workings of your code, the input and output
